@@ -6,7 +6,13 @@
 import scrapy
 
 
-class ArabicfiScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class ArabicfiWordItem(scrapy.Item):
+    word_in_arabic_diacritics = scrapy.Field()
+    word_in_arabic = scrapy.Field()
+    pronunciation = scrapy.Field()
+    meaning = scrapy.Field()
+    declension = scrapy.Field()
+    pronunciation_audio = scrapy.Field()
+    part_of_speech = scrapy.Field()
+    pattern = scrapy.Field()
+    word_link = scrapy.Field()
